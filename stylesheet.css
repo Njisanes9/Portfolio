@@ -21,6 +21,7 @@ body{
 	background-color : #1CA7EC;	
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	align-items:center;
+	over-flow:hidden;
 	
 }
 .navbar .logo{
@@ -81,7 +82,7 @@ body{
 	width:100%;
 	display:flex;
 	align-items:center;
-	
+	over-flow:hidden;
 	
 }
 .introduction .info{
@@ -144,6 +145,7 @@ body{
 	position:static;
 	padding:12px 12px;
 	align-items:center;
+	over-flow:hidden;
 }
 
 
@@ -210,6 +212,7 @@ body{
 	right:10px;
 	position:static;
 	align-items:center;
+	over-flow:hidden;
 	
 }
 
@@ -274,7 +277,7 @@ body{
 	right:10px;
 	position:static;
 	align-items:center;
-	
+	over-flow:hidden;
 	
 }
 .contacts h1{
