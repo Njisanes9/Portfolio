@@ -389,7 +389,9 @@ body{
     .navbar.active .items {
         display: block;
     }
-	
+	.logo{
+		display:hidden;
+	}
 	.introduction {
         flex-direction: column;
         align-items: center;
