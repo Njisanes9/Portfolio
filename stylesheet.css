@@ -82,7 +82,7 @@ body{
 	width:100%;
 	display:flex;
 	align-items:center;
-	overflow:hidden;
+	overflow: hidden;
 	
 }
 .introduction .info{
@@ -212,7 +212,7 @@ body{
 	right:10px;
 	position:static;
 	align-items:center;
-	overflow:hidden;
+	overflow: hidden;
 	
 }
 
@@ -277,7 +277,7 @@ body{
 	right:10px;
 	position:static;
 	align-items:center;
-	overflow:hidden;
+	overflow: hidden;
 	
 }
 .contacts h1{
