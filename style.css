@@ -497,6 +497,7 @@ h1{
 .footer{    
     bottom: 0;
     height: 280px;    
+
     justify-content: center;
     display: flex;
     overflow: hidden;
@@ -534,6 +535,7 @@ h1{
     margin-right: 150px;
     width: 250px;
     align-items: center;
+    justify-content: center;
 }
 
 .footer .social_media h1{    
@@ -544,7 +546,9 @@ h1{
 
 .footer .contact_details{    
     margin-right: 150px;
+    width: 250px;
     align-items: center;
+    justify-content: center;
 }
 
 .footer .contact_details h1{    
@@ -732,6 +736,8 @@ h1{
     .footer{        
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 550px;
     }
 	
