@@ -12,16 +12,18 @@
         <nav id="navbar">
             <div class="container">
                 <h1 class="logo">Sibabalo Njisane</h1>
-                <ul class="nav-links">
-                    <li><a href="#about">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="nav-buttons">
-                    <a href="https://drive.google.com/file/d/1aSkSXdvVH7vs7naMo1WMRu61ipC3ZlbN/view?usp=drive_link" class="btn">Download CV</a>
-                    <a href="mailto:njisanes9@email.com" class="btn">Hire Me</a>
+                <div class="nav-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a href="https://drive.google.com/file/d/1aSkSXdvVH7vs7naMo1WMRu61ipC3ZlbN/view?usp=drive_link" class="btn">Download CV</a>
+                        <a href="mailto:example@email.com" class="btn">Hire Me</a>
+                    </div>
                 </div>
                 <button id="menu-toggle" aria-label="Toggle menu">
                     <i data-lucide="menu"></i>
@@ -235,8 +237,14 @@
     <script>
         lucide.createIcons();
         document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('show');
-            document.querySelector('.nav-buttons').classList.toggle('show');
+            document.querySelector('.nav-container').classList.toggle('show');
+            const icon = this.querySelector('i');
+            if (icon.getAttribute('data-lucide') === 'menu') {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
         });
     </script>
 </body>
