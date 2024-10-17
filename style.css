@@ -64,10 +64,18 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
 .nav-links {
     display: flex;
     list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
@@ -77,6 +85,7 @@ header {
 .nav-buttons {
     display: flex;
     gap: 1rem;
+    margin-left: auto;
 }
 
 #menu-toggle {
