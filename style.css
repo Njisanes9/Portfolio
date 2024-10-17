@@ -284,16 +284,12 @@ footer i {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    #menu-toggle {
+     #menu-toggle {
         display: block;
     }
 
-    .nav-links, .nav-buttons {
+    .nav-container {
         display: none;
-    }
-
-    .nav-links.show, .nav-buttons.show {
-        display: flex;
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -303,10 +299,31 @@ footer i {
         padding: 1rem;
     }
 
-    .nav-links.show li, .nav-buttons.show a {
+    .nav-container.show {
+        display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links li {
         margin: 0.5rem 0;
     }
 
+    .nav-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-buttons .btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
     .about-content {
         flex-direction: column;
     }
