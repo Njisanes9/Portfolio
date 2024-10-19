@@ -237,7 +237,7 @@ h2 {
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: transform 0.3s ease;
-    color: var(--text-color);
+    
 }
 
 .project-card:hover {
@@ -257,10 +257,11 @@ h2 {
 .project-info h3 {
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
+    color: var(--text-color);
 }
 
 .project-info p {
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 1rem;
 }
 
